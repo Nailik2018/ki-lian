@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { KiLianComponent } from './ki-lian/ki-lian.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KiLianComponent
   ],
   imports: [
     BrowserModule,
