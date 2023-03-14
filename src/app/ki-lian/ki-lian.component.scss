@@ -1,5 +1,16 @@
 .ki-lian-component{
   height: 100%;
   width: 100%;
-  background: steelblue;
+  background: $neonBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-circle{
+  height: 350px;
+  width: 350px;
+  max-width: 600px;
+  background: $neonRed;
+  border-radius: 50% 50%;
 }
