@@ -5,12 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { KiLianComponent } from './sites/ki-lian/ki-lian.component';
 import { AboutMeComponent } from './sites/about-me/about-me.component';
+import { CountUpDirective } from './sites/about-me/count-up.directive';
+import { NavigationComponent } from './components/navigation/navigation.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     KiLianComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    CountUpDirective,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
