@@ -1,1 +1,53 @@
-<p>about-me works!</p>
+<div class="about-me-container">
+  <div class="about-me-row">
+    <h1>Fakten über mich</h1>
+  </div>
+  <div class="about-me-row">
+    <div class="about-me-info">
+      <div class="about-me-info-value" ><div [countUp]="age"></div></div>
+      <div class="about-me-info-title">
+        <div>Jahre alt</div>
+      </div>
+    </div>
+    <div class="about-me-info">
+      <div class="about-me-info-value">
+        <div [countUp]="visitedCountries"></div>
+      </div>
+      <div class="about-me-info-title">
+        <div>Länder besucht</div>
+      </div>
+    </div>
+    <div class="about-me-info">
+      <div class="about-me-info-value">
+        <div [countUp]="daysInOtherCountries"></div>
+      </div>
+      <div class="about-me-info-title">
+        <div>Auslandstage</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-me-row">
+    <div class="about-me-info">
+      <div class="about-me-info-value" ><div [countUp]="yearsAsASoftwareEngineer"></div></div>
+      <div class="about-me-info-title">
+        <div>Softwareentwicklerjahre</div>
+      </div>
+    </div>
+    <div class="about-me-info">
+      <div class="about-me-info-value">
+        <div [countUp]="lineCodesInThisProject"></div>
+      </div>
+      <div class="about-me-info-title">
+        <div>Projektcodezeilen</div>
+      </div>
+    </div>
+    <div class="about-me-info">
+      <div class="about-me-info-value">
+        <div [countUp]="motivation"></div>
+      </div>
+      <div class="about-me-info-title">
+        <div>motiviert</div>
+      </div>
+    </div>
+  </div>
+</div>
