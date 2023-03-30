@@ -27,14 +27,14 @@
         height: 50%;
         width: 100%;
         min-width: 100px;
+        display: flex;
       }
       .about-me-info-value div,
       .about-me-info-title div {
         height: 100%;
         max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        flex: 1;
+        text-align: center;
       }
     }
   }
