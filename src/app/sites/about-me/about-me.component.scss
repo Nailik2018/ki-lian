@@ -1,7 +1,6 @@
 .about-me-container {
   height: 100%;
   max-width: 100%;
-  //background: #46C2FF;
   background: #1c1f23;
   color: #46C2FF;
   font-size: calc((100vw - 4rem) / 34);
@@ -27,20 +26,9 @@
         height: 50%;
         width: 100%;
         min-width: 100px;
-        display: flex;
-      }
-      .about-me-info-value div,
-      .about-me-info-title div {
-        height: 100%;
-        max-width: 100%;
-        flex: 1;
         text-align: center;
       }
     }
-
-  }
-  .about-me-row:last-child .about-me-info:last-child .about-me-info-value:last-child div::after{
-    content: '%';
   }
 }
 
