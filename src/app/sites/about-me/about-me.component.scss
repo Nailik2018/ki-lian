@@ -37,6 +37,10 @@
         text-align: center;
       }
     }
+
+  }
+  .about-me-row:last-child .about-me-info:last-child .about-me-info-value:last-child div::after{
+    content: '%';
   }
 }
 
@@ -45,10 +49,10 @@
     padding: 0;
     margin: 0;
     .about-me-row {
-      height: 100%;
+      min-height: 100%;
       background: #1c1f23;
       color: #46C2FF;
-      .facts{
+      .facts {
         height: 100%;
         max-height: 100%;
         width: 100%;
