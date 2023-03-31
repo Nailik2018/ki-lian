@@ -2,6 +2,7 @@
   height: 100%;
   max-width: 100%;
   background: #1c1f23;
+  //background: $background;
   color: #46C2FF;
   font-size: calc((100vw - 4rem) / 34);
   .about-me-row {
@@ -43,6 +44,19 @@
       .facts {
         height: 100%;
         max-height: 100%;
+        width: 100%;
+      }
+    }
+    .about-me-info {
+      min-height: 100%;
+      .about-me-info-title {
+        height: 50%;
+        min-height: 50%;
+        width: 100%;
+      }
+      .about-me-info-value {
+        height: 50%;
+        min-height: 50%;
         width: 100%;
       }
     }
