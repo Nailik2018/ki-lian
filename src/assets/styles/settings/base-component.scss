@@ -11,7 +11,11 @@ $distance-to-nav: calc((100vh - 350px)/2);
       height: 350px;
       width: 350px;
       max-width: 600px;
-      background: #46C2FF;
+      vertical-align: middle;
+      background-image: url("../../images/ki-lian-tiny.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       border-radius: 50% 50%;
     }
   }
