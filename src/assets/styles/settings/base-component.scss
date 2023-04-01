@@ -1,33 +1,35 @@
+$distance-to-nav: calc((100vh - 350px)/2);
 .ki-lian-component {
-  padding-top: 50px;
+  padding-top: $distance-to-nav;
+  padding-bottom: $distance-to-nav;
   background: #1c1f23;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .main-circle {
-    height: 350px;
-    width: 350px;
-    max-width: 600px;
-    background: #46C2FF;
-    border-radius: 50% 50%;
+  .ki-lian-component-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-circle {
+      height: 350px;
+      width: 350px;
+      max-width: 600px;
+      background: #46C2FF;
+      border-radius: 50% 50%;
+    }
   }
 }
 
 .about-me-container {
-  height: 100%;
-  max-width: 100%;
+  padding-top: $distance-to-nav;
   background: #1c1f23;
   //background: $background;
   color: #46C2FF;
   font-size: calc((100vw - 4rem) / 34);
   .about-me-row {
-    height: calc(100% / 3);
     display: flex;
     .facts {
       display: flex;
       width: 100%;
     }
-    h1 {
+    .fact-title {
       display: flex;
       margin: 0;
       height: 100%;

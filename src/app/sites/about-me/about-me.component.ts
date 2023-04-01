@@ -3,8 +3,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss']
+  templateUrl: './about-me.component.html'
 })
 export class AboutMeComponent {
 
