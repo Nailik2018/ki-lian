@@ -1,7 +1,8 @@
-$distance-to-nav: calc((100vh - 350px)/2);
+$fullscreen-padding: calc((100vh - 350px)/2);
+$distance-to_nav: 50px;
 .ki-lian-component {
-  padding-top: $distance-to-nav;
-  padding-bottom: $distance-to-nav;
+  padding-top: $fullscreen-padding;
+  padding-bottom: $fullscreen-padding;
   background: #1c1f23;
   .ki-lian-component-line{
     display: flex;
@@ -21,6 +22,10 @@ $distance-to-nav: calc((100vh - 350px)/2);
   }
 }
 
+@mixin heightBox($distance-to_nav, $elements){
+  height: calc(calc(100vh - #{$distance-to_nav}) / $elements);
+}
+
 .about-me-container {
   padding-top: $distance-to-nav;
   background: #1c1f23;
@@ -28,15 +33,10 @@ $distance-to-nav: calc((100vh - 350px)/2);
   color: #46C2FF;
   font-size: calc((100vw - 4rem) / 34);
   .about-me-row {
-    display: flex;
-    .facts {
-      display: flex;
-      width: 100%;
-    }
+    @include heightBox($distance-to_nav, 3);
     .fact-title {
       display: flex;
       margin: 0;
-      height: 100%;
       width: 100%;
       justify-content: center;
       align-items: center;
@@ -53,7 +53,7 @@ $distance-to-nav: calc((100vh - 350px)/2);
     }
   }
 }
-
+/*
 @media screen and (max-width: 768px) {
   .about-me-container {
     padding: 0;
@@ -83,3 +83,4 @@ $distance-to-nav: calc((100vh - 350px)/2);
     }
   }
 }
+*/
