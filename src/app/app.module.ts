@@ -8,6 +8,7 @@ import { AboutMeComponent } from './sites/about-me/about-me.component';
 import { CountUpDirective } from './sites/about-me/count-up.directive';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { InfoCardComponent } from './cards/info-card/info-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     KiLianComponent,
     AboutMeComponent,
     CountUpDirective,
-    NavigationComponent
+    NavigationComponent,
+    InfoCardComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,7 @@ export class AboutMeComponent {
   visitedCountries :number = 22;
   daysInOtherCountries :number = 360;
   lineCodesInThisProject:number = 1000;
-  yearsAsASoftwareEngineer:number = this.yearsCalculation("01/08/2017");
+  yearsAsASoftwareEngineer:number = this.yearsCalculation("01/09/2019");
   motivation: number = 100;
   constructor(private route: ActivatedRoute) {
   }
