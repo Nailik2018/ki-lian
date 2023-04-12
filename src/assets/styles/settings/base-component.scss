@@ -32,7 +32,6 @@ $distance-to_nav: 50px;
 .about-me-container {
   padding-top: $distance-to-nav;
   background: #1c1f23;
-  //background: $background;
   color: #46C2FF;
   font-size: calc((100vw - 4rem) / 34);
   .about-me-row {
@@ -62,7 +61,7 @@ $distance-to_nav: 50px;
 
 @media screen and (max-width: 768px) {
   .about-me-container {
-    font-size: 4rem;
+    font-size: 3rem;
     .about-me-row {
       height: 100%;
       .fact-title {
