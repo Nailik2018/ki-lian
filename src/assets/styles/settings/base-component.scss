@@ -1,9 +1,129 @@
+// Imports
+@import '_variables';
+
 $fullscreen-padding: calc((100vh - 350px)/2);
 $distance-to_nav: 50px;
+
+/**
+#######################################################################################################################
+#######################################################################################################################
+Navigation start
+*/
+nav {
+  background-color: $neonBlue;
+  color: $black;
+  position: absolute;
+  width: 100%;
+  .hamburg {
+    //background: #555;
+    display: block;
+    height: 50px;
+    width: 75px;
+    //position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    transition: border-radius 0.5s;
+    left: 0;
+
+    .line {
+      position: absolute;
+      left: 10px;
+      height: 4px;
+      width: 55px;
+      background: $cyanBlue;
+      border-radius: 2px;
+      display: block;
+      transition: 0.5s;
+      transform-origin: center;
+    }
+
+    .line:nth-child(1) {
+      top: 12px;
+    }
+
+    .line:nth-child(2) {
+      top: 24px;
+    }
+
+    .line:nth-child(3) {
+      top: 36px;
+    }
+  }
+  .hamburg.checked
+  .line:nth-child(1){
+    transform: translateY(12px) rotate(-45deg);
+  }
+
+  .hamburg.checked
+  .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburg.checked
+  .line:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    a {
+      color: $cyanBlue;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+    }
+    a:hover {
+      background-color: $gray;
+      color: $cyanBlue;
+    }
+  }
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul.show {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+
+  .hamburg{
+    position: relative;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li {
+    text-align: center;
+  }
+}
+
+/**
+Navigation end
+#######################################################################################################################
+#######################################################################################################################
+*/
+
+/**
+#######################################################################################################################
+#######################################################################################################################
+ki-lian Site start
+*/
 .ki-lian-component {
   padding-top: $fullscreen-padding;
   padding-bottom: $fullscreen-padding;
-  background: #1c1f23;
+  background: $cyanBlue;
   .ki-lian-component-line {
     display: flex;
     justify-content: center;
@@ -19,20 +139,30 @@ $distance-to_nav: 50px;
       background-position: center;
       border-radius: 50% 50%;
       :hover {
-        color: red;
+        //color: red;
       }
     }
   }
 }
+/**
+ki-lian Site end
+#######################################################################################################################
+#######################################################################################################################
+*/
 
+/**
+#######################################################################################################################
+#######################################################################################################################
+about-me Site start
+*/
 @mixin heightBox($distance-to_nav, $elements) {
   height: calc(calc(100vh - #{$distance-to_nav}) / $elements);
 }
 
 .about-me-container {
   padding-top: $distance-to-nav;
-  background: #1c1f23;
-  color: #46C2FF;
+  background: $cyanBlue;
+  color: $neonBlue;
   font-size: calc((100vw - 4rem) / 34);
   .about-me-row {
     @include heightBox($distance-to_nav, 3);
@@ -58,7 +188,6 @@ $distance-to_nav: 50px;
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .about-me-container {
     font-size: 3rem;
@@ -78,10 +207,15 @@ $distance-to_nav: 50px;
           height: 50vh;
         }
         .about-me-info-value {
-          background: #46C2FF;
-          color: #1c1f23;
+          background: $neonBlue;
+          color: $cyanBlue;
         }
       }
     }
   }
 }
+/**
+about-me Site end
+#######################################################################################################################
+#######################################################################################################################
+*/
