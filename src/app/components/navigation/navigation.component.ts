@@ -12,6 +12,12 @@ export class NavigationComponent {
   showMenu = false;
 
   toggleMenu() {
+    let ele: any = document.querySelector('.hamburg');
+    if(this.showMenu) {
+      ele.classList.remove('checked');
+    } else {
+      ele.classList.add('checked');
+    }
     this.showMenu = !this.showMenu;
   }
 }
