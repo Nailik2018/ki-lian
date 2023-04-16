@@ -9,6 +9,7 @@ import { CountUpDirective } from './sites/about-me/count-up.directive';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SkillsComponent } from './sites/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     KiLianComponent,
     AboutMeComponent,
     CountUpDirective,
-    NavigationComponent
+    NavigationComponent,
+    SkillsComponent
   ],
     imports: [
         BrowserModule,

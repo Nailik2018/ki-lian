@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 export class NavigationComponent {
   navItems = [
     {label: 'Home', link: '/'},
-    {label: 'Über mich', link: '/about-me'}
+    {label: 'Über mich', link: '/about-me'},
+    {label: 'Fähigkeiten', link: '/skills'}
   ];
   showMenu = false;
 
